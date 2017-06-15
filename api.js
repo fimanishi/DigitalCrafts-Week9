@@ -27,7 +27,7 @@ app.get("/api/city/", function(request, response){
     response.json(result.data);
   });
 });
-
-app.listen(8000, function(){
-  console.log("Listening on port 8000");
+var PORT = process.env.PORT || 8000;
+app.listen(PORT, function(){
+  console.log("Listening on port " + PORT);
 });
