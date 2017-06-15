@@ -1,0 +1,27 @@
+{
+  "name": "digitalcrafts-week9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apicache": "^0.8.7",
+    "axios": "^0.16.2",
+    "express": "^4.15.3",
+    "hbs": "^4.0.1",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fimanishi/DigitalCrafts-Week9.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fimanishi/DigitalCrafts-Week9/issues"
+  },
+  "homepage": "https://github.com/fimanishi/DigitalCrafts-Week9#readme"
+}

@@ -1,6 +1,6 @@
 from fabric.api import run, env, sudo, cd, prefix, shell_env
 
-env.hosts = ['45.32.207.111']
+env.hosts = ['45.32.202.126']
 env.user = 'felipe'
 
 DIR = '/home/felipe/DigitalCrafts-Week9/draw'

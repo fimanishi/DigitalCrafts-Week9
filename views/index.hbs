@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API app</title>
+    <script src="/axios/axios.js"></script>
+  </head>
+  <body>
+    <h1>API app</h1>
+    <form id="form_id" onsubmit="return callApi()">
+      <input id="city" type="text" />
+      <input type="submit" />
+    </form>
+
+    <script>
+      function callApi(){
+        var city = document.getElementById("city").value;
+        var config = {
+          params: {q: city},
+        }
+        document.getElementById("city").value = "";
+        axios.get("/api/city/", config)
+          .then(function (result){
+            console.log(result.data.main.temp);
+            var newP = document.createElement("p");
+            var newContent = document.createTextNode(result.data.main.temp);
+            console.log(newContent);
+            newP.appendChild(newContent);
+            var currentElem = document.getElementById("form_id");
+            document.body.append(newP, currentElem);
+          })
+          .catch(function (error){
+            console.error(error);
+          })
+        return false;
+      }
+    </script>
+  </body>
+</html>
